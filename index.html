@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeGO - Home</title>
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="files/lightslider.css">
+    <script src="files/JQuery3.3.1.js"></script>
+    <script src="files/lightslider.js"></script>
+
+
+</head>
+<body>
+    
+    <div class="banner">
+        <input type="checkbox" checked id="check">
+        <div class="logo">
+
+            <label for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+            </label>
+            <h2>AnimeGO</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class='bx bxs-home'></i>Home</a></li>
+                <li><a href="explore.html"><i class='bx bxs-folder'></i>Explore</a></li>
+                <li><a href="movies.html"><i class='bx bxs-movie-play'></i>Movies</a></li>
+                <li><a id="mybtn"><i class='bx bxs-chat'></i>Request Anime</a></li>
+            </ul>
+        </nav>
+
+        <div class="rightside">
+            <ul>
+                <li><button href="" class="separator" id=""><i class='bx bxs-search'></i>Search</button></li>
+                <li><button href="" class="active1" id=""><i class='bx bxs-user-circle'></i>Login</button></li>
+            </ul>
+
+                    <!-- modal for request anime -->
+                    <div class="reqmodal" id="myModal">
+                    
+                        <!-- modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            
+                            <div class="info">
+                                <h5>Chat With Us</h5>
+                                <p>You can <span class="blue">Request Drama</span> Or <span class="red">Report A problem</span></p>
+
+                                <ul>
+                                    <li><a href="https://www.facebook.com/jmike15/"><i class='bx bxl-facebook-circle'>Facebook</i></a></li>
+                                    <li><a href="https://www.messenger.com/t/3564117743717005/"><i class='bx bxl-messenger'>Messenger</i></a></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                <script src="javascript/requestmodal.js"></script>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="clearfix"></div>
+<!-- 
+    <div class="sidebar">
+
+        <div class="logo1">
+            <input type="checkbox" id="check1" style="display: none;">
+            <label for="check1" class="checkbtn1">
+                <i class='bx bx-menu'></i>
+            </label>
+            <h2>AnimeGO</h2>
+        </div>
+    </div> -->
+
+    <div class="clearfix"></div>
+
+    <div class="content">
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="titletext">Spy Family</div>
+                <img src="slidesimage/spyfamily.webp" alt="spy family poster" style="max-width: 100%;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="titletext">One Piece</div>
+                <img src="slidesimage/one-piece.jpg" alt="one piece poster" style="max-width: 100%;" >
+            </div>
+
+            <div class="mySlides fade">
+                <div class="titletext">Jujutsu Kaisen</div>
+                <img src="slidesimage/jujutsukaisen.jpg" alt="jujutsu kaisen poster" style="max-width: 100%;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="titletext">Black Clover</div>
+                <img src="slidesimage/blackclover.jpg" alt="black clover poster" style="max-width: 100%;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="titletext">Kakegurui</div>
+                <img src="slidesimage/kakegurui.jpg" alt="kakegurui poster" style="max-width: 100%;">
+            </div>
+
+
+
+            <div style="text-align: center;">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script src="javascript/slides.js"></script>
+        </div>
+
+        <!-- latest upload content -->
+        <div id="latest">
+            <h2 class="latest-heading">Latest Episodes</h2>
+            <!-- slider -->
+            <ul id="autoWidth" class="cs-hidden">
+                <!-- slider box 1 -->
+                <li class="item-a">
+                    <!-- <a href="example.com"> -->
+                    <div class="latest-box">
+                        <!-- images -->
+                        <div class="latest-b-img">
+                            <h5>Episode 87</h5>
+                            <img src="slidesimage/dragon ball z.jpg"  alt="">
+                        </div>
+                        <!-- title -->
+                        <div class="latest-b-text">
+                            <strong>Dragon Ball Z</strong>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </li>
+                <!-- slider box 2 -->
+                <li class="item-b">
+                    <div class="latest-box">
+                        <!-- images -->
+                        <div class="latest-b-img">
+                            <h5>Episode 5</h5>
+                            <img src="slidesimage/blackclover.jpg" alt="">
+                        </div>
+                        <!-- title -->
+                        <div class="latest-b-text">
+                            <strong>Black Clover</strong>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- slider box 3 -->
+                <li class="item-c">
+                    <div class="latest-box">
+                        <!-- images -->
+                        <div class="latest-b-img">
+                            <h5>Episode 7</h5>
+                            <img src="slidesimage/jujutsukaisen.jpg" alt="">
+                        </div>
+                        <!-- title -->
+                        <div class="latest-b-text">
+                            <strong>Jujutsu Kaisen</strong>
+                        </div>
+                    </div>
+                </li>
+                <!-- slider box 4 -->
+                <li class="item-d">
+                    <div class="latest-box">
+                        <!-- images -->
+                        <div class="latest-b-img">
+                            <h5>Episode 1024</h5>
+                            <img src="slidesimage/one-piece.jpg" alt="">
+                        </div>
+                        <!-- title -->
+                        <div class="latest-b-text">
+                            <strong>One Piece</strong>
+                        </div>
+                    </div>
+                </li>
+                <!-- slider box 5 -->
+                <li class="item-e">
+                    <div class="latest-box">
+                        <!-- images -->
+                        <div class="latest-b-img">
+                            <h5>Episode 7</h5>
+                            <img src="slidesimage/spyfamily.webp" alt="">
+                        </div>
+                        <!-- title -->
+                        <div class="latest-b-text">
+                            <strong>Spy Family</strong>
+                        </div>
+                    </div>
+                </li>
+                <!-- slider box 6 -->
+                <li class="item-f">
+                    <div class="latest-box">
+                        <!-- images -->
+                        <div class="latest-b-img">
+                            <h5>Episode 20</h5>
+                            <img src="slidesimage/borutu.webp" alt="">
+                        </div>
+                        <!-- title -->
+                        <div class="latest-b-text">
+                            <strong>Boruto</strong>
+                        </div>
+                    </div>
+                </li>
+                
+                <!-- slider box 7 -->
+                <li class="item-g">
+                    <div class="latest-box">
+                        <!-- images -->
+                        <div class="latest-b-img">
+                            <h5>Episode 220</h5>
+                            <img src="slidesimage/fairytail.jpg"  alt="">
+                        </div>
+                        <!-- title -->
+                        <div class="latest-b-text">
+                            <strong>FairyTail</strong>
+                        </div>
+                    </div>
+                </li>
+                <!-- slider box 8 -->
+                <li class="item-h">
+                    <div class="latest-box">
+                        <!-- images -->
+                        <div class="latest-b-img">
+                            <h5>Episode 95</h5>
+                            <img src="slidesimage/hunterx.jpg" alt="">
+                        </div>
+                        <!-- title -->
+                        <div class="latest-b-text">
+                            <strong>Hunter X Hunter</strong>
+                        </div>
+                    </div>
+                </li>
+                <!-- slider box 9 -->
+                <li class="item-i">
+                    <div class="latest-box">
+                        <!-- images -->
+                        <div class="latest-b-img">
+                            <h5>Episode 12</h5>
+                            <img src="slidesimage/kakegurui.jpg" alt="">
+                        </div>
+                        <!-- title -->
+                        <div class="latest-b-text">
+                            <strong>Kakegurui</strong>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <script src="javascript/slider1.js"></script>
+        </div>
+
+
+        <!-- footer -->
+        <div class="footer">
+            <p>This Website does not gain profit. It is for educational purposes only.</p>
+            <p>&copy; Copyright 2022</p>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
